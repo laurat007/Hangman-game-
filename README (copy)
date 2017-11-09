@@ -1,0 +1,25 @@
+  Program implementation took 18 hours approximately.
+  The program receives as parameters many files from which
+it reads in vectors printable characters, until '\n' occurs. 
+  After openning ncurses window, a menu is displayed, from which 
+the player can select one of the following options: New Game, Resume 
+Game, Quit. Current option is marked by highlight and can be selected
+with Enter.
+  Once selected New Game, it enters a new window, with a control panel
+in which date, time, number of expressions available, total number of 
+characters and a few instructions come up.
+  It is generated a number between 0 and the number of expressions 
+in order to pick a random expression to be guessed. This one is split
+in words, and each word is encoded by hangman rules.
+  The player should pass a character in maximum 7 seconds, otherwise 
+it will be generated a random character. If this one is part of the
+original string it is shown, filling the blanks, but if it has been 
+already tested, nothing happens. If there is a new wrong character
+the hang appears on the screen. With each mistake, the player is shown 
+its status.
+  Game ends when the original string matches the completed one or when
+the number of mistakes is 6. However, a message is sent and the player 
+can now choose to stat a new game by pressing 'N' or to come back to 
+main menu by pressing 'Q'.
+  In addition to this, at each screen update the background color is 
+changed.
